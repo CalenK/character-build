@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Sonic character builder</title>
+</head>
+<body>
+  <h1>Sonic Character Builder</h1>
+  <p>Fill out the form to build your very own Sonic the Hedgehog character!</p>
+
+  <form>
+    <label for="character-name">Enter character name</label>
+    <input name="character-name" id="character-name" type="text">
+    <h2>Select gender</h2>
+    <label for="male">male</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="non-binary">non-binary</label>
+    <input type="radio" name="gender" id="non-binary" value="non-binary">
+    <label for="character-color">Enter color</label>
+    <input name="character-color" id="character-color" type="text">
+    <h2>Select power</h2>
+    <label for="super-speed">Super speed</label>
+    <input type="radio" name="power" id="super-speed" value="speed">
+    <label for="super-strength">Super strength</label>
+    <input type="radio" name="power" id="super-strength" value="strength">
+    <label for="flying">flying</label>
+    <input type="radio" name="power" id="flying" value="flight">
+    <label for="psychokinesis">Psychokinesis</label>
+    <input type="radio" name="power" id="psychokinesis" value="levitation">
+    <h2>Select species</h2>
+    <label for="hedgehog">Hedgehog</label>
+    <input type="radio" name="species" id="hedgehog" value="hedgehog">
+    <label for="fox">Fox</label>
+    <input type="radio" name="species" id="fox" value="fox">
+    <label for="cat">Cat</label>
+    <input type="radio" name="species" id="cat" value="cat">
+    <label for="rabbit">Rabbit</label>
+    <input type="radio" name="species" id="rabbit" value="rabbit">
+    <button type="submit">submit</button>
+  </form>
+  <br />
+  <button type="button" class="hidden" id="reset">Click to reset character</button>
+
+  <div id="result" class="hidden">
+    <h1>your character</h1>
+    <p>
+      <span id="name">_________</span> the <span id="species">_________</span>: gender <span id="gender">_________</span>, color <span id="color">_________</span>, ablities <span id="power">_________</span>.
+    </p>
+  </div>
+</body>  
+</html>
